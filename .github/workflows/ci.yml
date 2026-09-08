@@ -1,4 +1,4 @@
-name: Laravel CI
+name: Ankit Tiwari
 
 on:
   push:
@@ -32,9 +32,6 @@ jobs:
 
       - name: Check Composer
         run: composer --version
-
-      - name: Install Composer dependencies
-        run: composer install --no-interaction --prefer-dist --optimize-autoloader
 
       - name: Prepare environment
         run: copy .env.example .env
