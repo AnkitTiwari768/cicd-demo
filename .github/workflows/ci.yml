@@ -33,11 +33,7 @@ jobs:
       - name: Check Composer
         run: composer --version
 
-      - name: Prepare environment
-        run: copy .env.example .env
 
-      - name: Generate application key
-        run: php artisan key:generate
 
       - name: Clear Laravel cache
         run: php artisan optimize:clear
